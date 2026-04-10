@@ -1,2 +1,3 @@
 Hello from my-first-project!
 This is a shared project example file.
+追記: このファイルは共有ワークスペースでの編集確認用です。
