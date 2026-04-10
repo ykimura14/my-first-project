@@ -6,7 +6,7 @@
 1. VS Code でこのフォルダを開く
 2. ファイルを編集する
 3. `git add .`
-4. `git commit -m "変更内容"
+4. `git commit -m "変更内容"`
 5. `git push`
 
 ## 3台の PC で共有する手順
