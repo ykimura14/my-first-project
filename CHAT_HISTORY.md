@@ -13,6 +13,11 @@ This file stores important conversation points to share across PCs.
 - Installed gh and authenticated to GitHub
 - Added README.md, SETUP.md, hello.txt, and updated project files
 
+## Important note
+- Copilot chat history itself is not automatically syncable between PCs.
+- This file is the practical workaround: record key conversation points here.
+- After important conversations, update this file so others can follow.
+
 ## Next actions
 - Use git clone / git pull on other PCs
 - Commit and push changes from any PC

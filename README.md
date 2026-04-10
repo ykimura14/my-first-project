@@ -16,5 +16,7 @@
 ## 例ファイル
 - `hello.txt` を作りました。これを各 PC で確認してください。
 
-## さらに詳しく
-- `SETUP.md` も参照してください。
+## 会話履歴の共有
+- Copilot のチャット履歴は自動では同期されません。
+- 重要な決定は `CHAT_HISTORY.md` に記録し、`git push` で共有してください。
+- 追記するには、`./scripts/update_chat_history.sh "summary"` を使います。
