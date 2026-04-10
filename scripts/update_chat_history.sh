@@ -33,9 +33,14 @@ fi
 
 timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
 printf '\n## Chat history update\n- Summary: %s\n- Date: %s\n- Branch: %s\n' "$summary" "$timestamp" "$branch" >> CHAT_HISTORY.md
-if [ -n "$auto_detailsif [ -n "$auto_detailsif [ -n "$auto_detailsif [ -n "$auto_detailsif [ -n "
-###################ep################cha################add CHA###################ep################cha###############"
-ifififififififififififififit; tififi echo 'No changesififcommit.'
+if [ -n "$auto_details" ]; then
+  printf '- Details: %s\n' "$auto_details" >> CHAT_HISTORY.md
+fi
+
+git add CHAT_HISTORY.md
+commit_msg="Update chat history: $summary"
+if git diff --cached --quiet; then
+  echo 'No changes to commit.'
 else
   git commit -m "$commit_msg"
 fi
@@ -47,3 +52,4 @@ else
 fi
 
 echo 'Chat history updated and pushed.'
+
